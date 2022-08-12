@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import FriendListItem from './FriendListItem';
+
 
 function FriendList ({ friends }) {
     console.log(friends);
@@ -12,3 +14,15 @@ function FriendList ({ friends }) {
 }
 
 export default FriendList;
+
+
+FriendList.propTypes = {
+    friends: PropTypes.arrayOf(
+        PropTypes.exact({
+          avatar: PropTypes.string.isRequired,
+          name: PropTypes.string.isRequired,
+          isOnline: PropTypes.bool,
+          id: PropTypes.number.isRequired
+      })
+    ),
+  };

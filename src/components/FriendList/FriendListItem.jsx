@@ -1,4 +1,5 @@
 import style from './FriendList.module.css';
+import PropTypes from 'prop-types';
 
 function FriendListItem ({ status, avatar, name }) {
     console.log(status);
@@ -12,3 +13,9 @@ function FriendListItem ({ status, avatar, name }) {
 }
 
 export default FriendListItem;
+
+FriendListItem.propTypes = {
+    avatar: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    status: PropTypes.bool
+}
