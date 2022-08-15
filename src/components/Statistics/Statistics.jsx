@@ -1,15 +1,16 @@
 import PropTypes from 'prop-types';
+import style from './Statistics.module.css'
 
 function StatList({ title, stats }) {
 return (    
-<section className="statistics">
-    <h2 className="title">{ title ? 'Upload stats' : '' }</h2>
+<section className={style.statistics}>
+    <h2 className={style.title}>{ title ? 'Upload stats' : '' }</h2>
 
-    <ul className="stat-list">
+    <ul className={style.statlist}>
     {stats.map(stat => (
-        <li key={stat.id} className="item">
-        <span className="label">{stat.label}</span>  
-        <span className="percentage">{stat.percentage}%</span>
+        <li key={stat.id} className={style.item}>
+        <span className={style.label}>{stat.label}</span>  
+        <span className={style.percentage}>{stat.percentage}%</span>
         </li>
     ))}
     </ul>
