@@ -1,3 +1,9 @@
+.friendlist {
+    list-style: none;
+    padding: 0;
+}
+
+
 .online {
     height: 25px;
     width: 25px;
