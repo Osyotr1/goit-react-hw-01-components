@@ -1,6 +1,19 @@
 .friendlist {
     list-style: none;
-    padding: 0;
+    position: relative;
+    display: flex;
+    background-color: lightyellow;
+    width: 150px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 3%;
 }
 
 
@@ -18,4 +31,23 @@
     border-radius: 50%;
     display: inline-block;
     background-color: red;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.avatar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.name {
+    font-family: 'Lucida Sans';
+    font-size: 20px;
+    color: black;
 }

@@ -4,7 +4,6 @@ import style from './FriendList.module.css';
 
 
 function FriendList ({ friends }) {
-    console.log(friends);
     return (
     <ul className={style.friendlist}>
         {friends.map(friend => (
