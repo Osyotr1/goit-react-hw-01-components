@@ -4,8 +4,7 @@ import style from './Statistics.module.css'
 function StatList({ title, stats }) {
 return (    
 <section className={style.statistics}>
-    <h2 className={style.title}>{ title ? 'Upload stats' : '' }</h2>
-
+{ title ? <h2 className={style.title}>Upload Stats</h2> : '' }
     <ul className={style.statlist}>
     {stats.map(stat => (
         <li key={stat.id} className={style.item}>
